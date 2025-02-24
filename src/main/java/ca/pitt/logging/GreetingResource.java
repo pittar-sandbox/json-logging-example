@@ -25,6 +25,6 @@ public class GreetingResource {
     @Produces(MediaType.TEXT_PLAIN)
     public String hello(String name) {
         LOG.error("Logging the name part of the path: " + name);
-        return "Hello from RESTEasy Reactive";
+        return "Hello " + name + " from RESTEasy Reactive";
     }
 }
